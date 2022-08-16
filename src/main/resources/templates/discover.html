@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head th:insert="fragments/head">
+
+</head>
+<body>
+<header th:insert="fragments/header">
+</header>
+
+<main>
+    <div id="discover-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br>
+                <h1 class="header center white-text">Develop your skills</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">We are committed to empowering people
+                        eager to learn and grow professionally. </h5>
+                </div>
+                <br><br>
+            </div>
+        </div>
+        <div class="parallax"><img src="https://the-tech-trend.com/wp-content/uploads/2021/02/Top-10-Blockchain-Programming-Languages-to-become-Blockchain-developer.jpg" alt="Unsplash discover background"></div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="https://media.istockphoto.com/photos/bitcoin-ecommerce-concept-on-digital-screen-picture-id1304093999?b=1&k=20&m=1304093999&s=170667a&w=0&h=Ec0WKS-XZk_FhkOi9gVagRV3WUSdUIjb289skcGE8Vw=">
+                        <a th:href="@{/courses}" class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                class="material-icons">arrow_forward</i></a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Courses</span>
+                        <p>Enter to see the courses we offer, and join one to learn.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="/img/docentes.jpg">
+                        <a th:href="@{/tutors}"
+                           class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                class="material-icons">arrow_forward</i></a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Tutors</span>
+                        <p>Here you can see the list of our current instructors. You can also sign up as
+                            one.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<br><br>
+<footer class="page-footer teal" th:insert="fragments/footer">
+
+</footer>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/init.js"></script>
+
+</body>
+</html>

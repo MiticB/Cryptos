@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head th:insert="fragments/head">
+</head>
+<body>
+<header th:insert="fragments/header">
+</header>
+
+<main>
+    <div class="container">
+        <h2 style="color: darkblue;font-weight: bolder" class="center-align">Proceed with enrolling to obtain a certificate in Bitcoin!</h2>
+        <hr>
+        <div class="center-align">
+            <a class="btn" href="/payment">Enroll</a>
+        </div>
+    </div>
+</main>
+<footer class="page-footer teal" th:insert="fragments/footer">
+</footer>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/init.js"></script>
+
+</body>
+</html>
